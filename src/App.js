@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import HeadLine from "./Headline";
+import { News as MyNews } from "./Headline";
+import User from "./user";
 
-function App() {
+import Counter from "./counter";
+
+const App = () => {
+  const info = " ABC News paper";
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="">
+        <h1>{info}</h1>
+        <Counter />
+        <HeadLine></HeadLine>
+        <MyNews></MyNews>
+        <User></User>
+      </div>
+    </>
   );
-}
+};
 
 export default App;
