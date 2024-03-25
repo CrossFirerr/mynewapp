@@ -11,8 +11,8 @@ const App = () => {
   return (
     <>
       <div className="">
-        <h1>{info}</h1>
         <Counter />
+        <h1>{info}</h1>
         <HeadLine></HeadLine>
         <MyNews></MyNews>
         <User></User>
